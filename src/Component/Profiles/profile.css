@@ -1,0 +1,95 @@
+#profile {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.profileTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.profileDesc {
+  font-weight: 400;
+  font-size: 4rem;
+  max-width: 51rem;
+  margin: 0 2rem;
+}
+
+.profileBars {
+  margin: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+  text-align: left;
+}
+
+.profileBar {
+  display: flex;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(50, 50, 50);
+}
+
+.profileBarImg {
+  object-fit: cover;
+  height: 5rem;
+  width: 5rem;
+  margin-right: 2rem;
+}
+
+.profileBarText {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.desktopMenuBtn {
+  height: 3rem;
+  width: 8rem;
+  align-items: center;
+  background: white;
+  color: black;
+  border: none;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+}
+
+.submitBtn {
+  background: white;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding: 0.75rem 3.5rem;
+}
+body {
+  background: rgb(30, 30, 30);
+  color: white;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 720px) {
+  .profileBarText > P {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profileBarText > P {
+    font-size: 3vw;
+  }
+  .profileBarImg {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+  .profileBarText > h2 {
+    font-size: 5vw;
+  }
+}
